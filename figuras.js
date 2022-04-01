@@ -3,14 +3,14 @@ console.group("cuadrado");
 //const ladoCuadrado = 5;
 //console.log("Los lados del cuadrado miden: " + ladoCuadrado + "cm");
 
-function perimetroCuadrado (lado) {
+function perimetroCuadrado(lado) {
     return lado * 4;
 }
 //console.log("El perímetro del cuadrado es: " + perimetroCuadrado + "cm");
 
 //const areaCuadrado = ladoCuadrado * ladoCuadrado;
 
-function areaCuadrado (lado) {
+function areaCuadrado(lado) {
     return lado * lado;
 }
 //console.log ("El área del cuadrado es: " + areaCuadrado + "cm2");
@@ -59,6 +59,7 @@ console.groupEnd();
 function calcularPerimetroCuadrado () {
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
+
     const perimetro = perimetroCuadrado(value);
     alert(perimetro);
 }
@@ -66,6 +67,7 @@ function calcularPerimetroCuadrado () {
 function calcularAreaCuadrado () {
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
+    
     const area = areaCuadrado(value);
     alert(area);
 }
