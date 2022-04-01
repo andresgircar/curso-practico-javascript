@@ -3,16 +3,16 @@ console.group("cuadrado");
 //const ladoCuadrado = 5;
 //console.log("Los lados del cuadrado miden: " + ladoCuadrado + "cm");
 
-function perimetroCuadrado(lado) {
-    return lado * 4;
-}
+//function perimetroCuadrado(lado) {
+    //return lado * 4;
+//}
 //console.log("El perímetro del cuadrado es: " + perimetroCuadrado + "cm");
 
 //const areaCuadrado = ladoCuadrado * ladoCuadrado;
 
-function areaCuadrado(lado) {
-    return lado * lado;
-}
+//function areaCuadrado(lado) {
+    //return lado * lado;
+//}
 //console.log ("El área del cuadrado es: " + areaCuadrado + "cm2");
 console.groupEnd();
 
@@ -56,18 +56,21 @@ console.log("El área del círculo es: " + areaCirculo + "cm2")
 console.groupEnd();
 
 //Conectando con HTML para que el usuario ingrese los datos directamente
-function calcularPerimetroCuadrado () {
-    const input = document.getElementById("InputCuadrado");
+function perimetroCuadrado (lado) {
+    return lado * 4;
+};
+function areaCuadrado (lado) {
+    return lado * lado;
+};
+function calcularPerimetroCuadrado() {
+    const input = document.getElementById("inputCuadrado");
     const value = input.value;
-
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
-}
-
-function calcularAreaCuadrado () {
-    const input = document.getElementById("InputCuadrado");
+    alert (perimetro);
+};
+function calcularAreaCuadrado() {
+    const input = document.getElementById("inputCuadrado");
     const value = input.value;
-    
     const area = areaCuadrado(value);
-    alert(area);
-}
+    alert (area);
+};
